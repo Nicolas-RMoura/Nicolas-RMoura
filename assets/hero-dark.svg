@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" width="100%" height="100%" role="img" aria-label="Nicolas Moura - Full-Stack Developer &amp; DevOps">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050506"/>
+      <stop offset="50%" stop-color="#0C0C0E"/>
+      <stop offset="100%" stop-color="#060608"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#52525B"/>
+      <stop offset="45%" stop-color="#27272A"/>
+      <stop offset="100%" stop-color="#3F3F46"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F4F4F5"/>
+      <stop offset="100%" stop-color="#A1A1AA"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="gridMaskGrad" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+    </radialGradient>
+    <mask id="gridMask">
+      <rect width="1200" height="390" fill="url(#gridMaskGrad)"/>
+    </mask>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#FFFFFF" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <clipPath id="cardClip">
+      <rect x="2" y="2" width="1196" height="386" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.85); }
+    }
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes scanMove {
+      0% { transform: translateX(-320px); }
+      100% { transform: translateX(1160px); }
+    }
+    .pulse { animation: pulseDot 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .cursor { animation: blinkCursor 1.1s step-end infinite; }
+    .scanbar { animation: scanMove 5.5s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="2" y="2" width="1196" height="386" fill="url(#bgGrad)"/>
+    <rect x="2" y="2" width="1196" height="386" fill="url(#grid)" mask="url(#gridMask)"/>
+    <ellipse cx="320" cy="0" rx="420" ry="130" fill="#FFFFFF" fill-opacity="0.035"/>
+    <ellipse cx="1015" cy="168" rx="190" ry="160" fill="#FFFFFF" fill-opacity="0.03"/>
+    <line x1="56" y1="84" x2="780" y2="84" stroke="#27272A" stroke-width="1"/>
+    <rect x="56" y="83" width="68" height="2" fill="#FAFAFA"/>
+  </g>
+
+  <rect x="2" y="2" width="1196" height="386" rx="18" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <rect x="8" y="8" width="1184" height="374" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Top Status Bar -->
+  <g transform="translate(56, 38)">
+    <rect x="0" y="0" width="184" height="28" rx="14" fill="#141417" stroke="#2E2E34" stroke-width="1"/>
+    <circle class="pulse" cx="18" cy="14" r="4" fill="#FFFFFF"/>
+    <text x="31" y="18" class="mono" font-size="11" font-weight="600" fill="#E4E4E7" letter-spacing="1.2">STATUS :: AVAILABLE</text>
+
+    <text x="204" y="18" class="mono" font-size="11" fill="#71717A" letter-spacing="1.8">SAO PAULO, SP  //  DEV  ·  DEVOPS  ·  DEVSECOPS</text>
+  </g>
+
+  <!-- Main Editorial Typography -->
+  <text x="56" y="146" class="sans" font-size="56" font-weight="800" fill="url(#titleGrad)" letter-spacing="2.5">NICOLAS MOURA</text>
+
+  <text x="58" y="184" class="mono" font-size="15" font-weight="600" fill="#D4D4D8" letter-spacing="3.6">FULL-STACK DEVELOPER &amp; DEVOPS</text>
+
+  <text x="58" y="226" class="sans" font-size="15.5" font-weight="400" fill="#A1A1AA">Desenvolvimento de aplicações escaláveis, automação de sistemas e containers.</text>
+  <text x="58" y="252" class="sans" font-size="15.5" font-weight="400" fill="#71717A">Unindo engenharia de software, cultura DevOps e boas práticas de DevSecOps.</text>
+
+  <!-- Right Side: Monochrome Dev + DevOps Orbital Topology (cx=1015, cy=165) -->
+  <g transform="translate(1015, 165)">
+    <g>
+      <circle cx="0" cy="0" r="106" fill="none" stroke="#27272A" stroke-width="1" stroke-dasharray="4 6"/>
+      <circle cx="106" cy="0" r="3.5" fill="#FAFAFA"/>
+      <circle cx="-106" cy="0" r="2.5" fill="#71717A"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="48s" repeatCount="indefinite"/>
+    </g>
+
+    <g>
+      <circle cx="0" cy="0" r="74" fill="none" stroke="#3F3F46" stroke-width="1" stroke-dasharray="18 8 4 8"/>
+      <circle cx="0" cy="-74" r="3" fill="#D4D4D8"/>
+      <circle cx="0" cy="74" r="3" fill="#52525B"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="32s" repeatCount="indefinite"/>
+    </g>
+
+    <line x1="-122" y1="0" x2="-92" y2="0" stroke="#3F3F46" stroke-width="1"/>
+    <line x1="92" y1="0" x2="122" y2="0" stroke="#3F3F46" stroke-width="1"/>
+    <line x1="0" y1="-122" x2="0" y2="-92" stroke="#3F3F46" stroke-width="1"/>
+    <line x1="0" y1="92" x2="0" y2="122" stroke="#3F3F46" stroke-width="1"/>
+
+    <!-- Center Hexagon Core + Code Brackets </> Icon -->
+    <polygon points="0,-42 36,-21 36,21 0,42 -36,21 -36,-21" fill="#111114" stroke="#E4E4E7" stroke-width="1.5"/>
+    <polygon points="0,-33 28,-16 28,16 0,33 -28,16 -28,-16" fill="none" stroke="#3F3F46" stroke-width="1"/>
+    <polyline points="-8,-8 -16,0 -8,8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="8,-8 16,0 8,8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="3" y1="-10" x2="-3" y2="10" stroke="#A1A1AA" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- 4 Satellite Domain Pills -->
+    <g transform="translate(-156, -96)">
+      <rect x="0" y="0" width="80" height="22" rx="4" fill="#0E0E11" stroke="#3F3F46" stroke-width="1"/>
+      <text x="40" y="14.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#F4F4F5" letter-spacing="0.8">FULL-STACK</text>
+    </g>
+    <g transform="translate(78, -96)">
+      <rect x="0" y="0" width="80" height="22" rx="4" fill="#0E0E11" stroke="#3F3F46" stroke-width="1"/>
+      <text x="40" y="14.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#F4F4F5" letter-spacing="0.8">DOCKER/K8S</text>
+    </g>
+    <g transform="translate(-156, 76)">
+      <rect x="0" y="0" width="80" height="22" rx="4" fill="#0E0E11" stroke="#3F3F46" stroke-width="1"/>
+      <text x="40" y="14.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#D4D4D8" letter-spacing="0.8">CI/CD · IAC</text>
+    </g>
+    <g transform="translate(78, 76)">
+      <rect x="0" y="0" width="76" height="22" rx="4" fill="#0E0E11" stroke="#3F3F46" stroke-width="1"/>
+      <text x="38" y="14.5" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#D4D4D8" letter-spacing="0.8">DEVSECOPS</text>
+    </g>
+  </g>
+
+  <!-- Bottom Pipeline Execution Bar -->
+  <g transform="translate(44, 306)">
+    <clipPath id="pipeClip">
+      <rect x="0" y="0" width="1112" height="52" rx="10"/>
+    </clipPath>
+    <rect x="0" y="0" width="1112" height="52" rx="10" fill="#0D0D10" stroke="#27272A" stroke-width="1.2"/>
+    <g clip-path="url(#pipeClip)">
+      <rect class="scanbar" x="0" y="0" width="260" height="2" fill="url(#scanGrad)"/>
+    </g>
+
+    <text x="22" y="31" class="mono" font-size="12.5" fill="#71717A">nicolas@dev:~$</text>
+    <text x="142" y="31" class="mono" font-size="12.5" font-weight="600" fill="#FFFFFF">[CODE: TS · PYTHON · .NET]</text>
+    <text x="352" y="31" class="mono" font-size="12.5" fill="#52525B">──▶</text>
+    <text x="388" y="31" class="mono" font-size="12.5" font-weight="600" fill="#E4E4E7">[BUILD: DOCKER]</text>
+    <text x="518" y="31" class="mono" font-size="12.5" fill="#52525B">──▶</text>
+    <text x="554" y="31" class="mono" font-size="12.5" font-weight="600" fill="#E4E4E7">[SEC: RBAC &amp; SCAN]</text>
+    <text x="710" y="31" class="mono" font-size="12.5" fill="#52525B">──▶</text>
+    <text x="746" y="31" class="mono" font-size="12.5" font-weight="600" fill="#FFFFFF">[DEPLOY: CI/CD · K8S]</text>
+    <rect class="cursor" x="920" y="18" width="8" height="16" fill="#FFFFFF"/>
+
+    <rect x="1008" y="13" width="88" height="26" rx="6" fill="#18181B" stroke="#3F3F46" stroke-width="1"/>
+    <text x="1052" y="30" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#FFFFFF" letter-spacing="1">READY</text>
+  </g>
+</svg>
